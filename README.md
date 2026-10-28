@@ -40,3 +40,7 @@ Open http://localhost:8080.
 
 ## Redesign review
 See [DESIGN_AUDIT.md](DESIGN_AUDIT.md) and [DESIGN_REVIEW.md](DESIGN_REVIEW.md). Screenshots are in `review/`. No installation or build step is required.
+
+## Current Royal Luxury implementation
+
+The current branch follows the approved desktop/mobile Royal Luxury reference. See [VISUAL_REVIEW.md](VISUAL_REVIEW.md) for actual browser checks, side-by-side comparisons and remaining differences. [Asset provenance and prompts](assets/ROYAL_ASSETS.md) document the unmarked concept imagery and reusable crown logo. Earlier DESIGN_AUDIT.md, DESIGN_REVIEW.md and screenshots record previous iterations.
