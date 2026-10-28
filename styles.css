@@ -2,3 +2,147 @@
 
 /* Central branch */
 .branch-section{background:linear-gradient(155deg,#151514,#0d0e0e 70%);border-top:1px solid var(--border)}.branch-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}.branch-card,.branch-visual{border:1px solid #524330;border-radius:12px;background:#141616;min-width:0}.branch-card{padding:34px}.branch-item{display:flex;align-items:flex-start;gap:18px;padding-bottom:27px;margin-bottom:27px;border-bottom:1px solid #39352e}.branch-icon{color:var(--gold);width:48px;height:48px;border:1px solid #746044;border-radius:50%;display:grid;place-items:center;flex-shrink:0}.branch-icon svg{width:23px;height:23px}.branch-item h3{font-size:17px;margin:0 0 10px}.branch-item address{font-style:normal;color:#d7d1c6;font-size:14px;line-height:2.2}.branch-phones{display:flex;flex-wrap:wrap;gap:14px 22px}.branch-phones a{color:var(--gold-light);font-size:17px;font-weight:700;unicode-bidi:isolate;transition:color .2s}.branch-phones a:hover{color:white}.branch-navigate{gap:12px;width:100%;max-width:370px}.neshan-mark{display:inline-flex;width:26px;height:26px;align-items:center}.neshan-mark svg{width:100%;height:100%}.branch-coordinates{font-size:11px;color:#aaa397;margin-top:21px;line-height:1.8;overflow-wrap:anywhere}.branch-coordinates span{unicode-bidi:isolate}.branch-visual{min-height:350px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at center,#76542c30,transparent 60%),repeating-linear-gradient(25deg,transparent 0 38px,#d6ae7021 39px,transparent 40px),#111312}.branch-visual-inner{text-align:center;display:flex;align-items:center;flex-direction:column;padding:32px;color:var(--gold)}.branch-visual-inner svg{width:74px;height:74px;margin-bottom:14px}.branch-visual-inner strong{font-size:35px}.branch-visual-inner span{color:#eee0c4;font-size:14px}.branch-visual-line{height:1px;width:170px;background:#806643;margin:24px 0}.branch-visual-inner small{letter-spacing:2px;font:10px Arial;color:#c5ae84}.contact-branch-link{margin-top:18px}.footer-branch-link{color:var(--gold);font-size:12px}@media(max-width:700px){.branch-grid{grid-template-columns:1fr}.branch-card{padding:24px 18px}.branch-visual{min-height:240px}.branch-item{gap:12px}.branch-icon{width:40px;height:40px}.branch-phones{flex-direction:column;gap:8px}.branch-phones a{font-size:18px}.branch-navigate{max-width:none}.branch-visual-inner svg{width:54px;height:54px}.branch-visual-inner strong{font-size:28px}}
+
+
+/* Bashemsh visual redesign — editorial luxury, October 2026 */
+:root{--bg:#090a0a;--panel:#121312;--ink:#f7f0e5;--muted:#b2a99c;--gold:#d8ad67;--gold-light:#f5dca5;--border:#383026}
+html{scroll-padding-top:83px}
+body{background:#090a0a;overflow-x:hidden}
+.shell{width:min(1300px,calc(100% - 88px))}
+.header{height:88px;background:rgba(8,9,9,.91);border-bottom:1px solid rgba(214,170,99,.18);box-shadow:0 6px 35px rgba(0,0,0,.15)}
+.nav{gap:30px}
+.brand-icon{width:56px;height:56px}
+.brand-text b{font-size:27px}
+.brand-text small{letter-spacing:3.5px;color:#b99b6d}
+.links{gap:38px;color:#eee6d8;font-size:13px}
+.nav-cta{border-color:#a68045;color:#f5d59b;border-radius:0;letter-spacing:.1px;padding:14px 24px}
+.nav-cta:hover{background:rgba(213,173,100,.12)}
+.hero{min-height:765px;isolation:isolate;background:#090a0a;overflow:hidden;border-bottom:1px solid rgba(218,179,113,.25)}
+.hero::after{content:"";pointer-events:none;position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 80% 15%,transparent 0,rgba(0,0,0,.18) 45%,rgba(0,0,0,.25) 80%),linear-gradient(90deg,rgba(0,0,0,.16),transparent 60%)}
+.hero-glow{z-index:0;left:0;right:0;top:0;width:100%;height:100%;background:radial-gradient(ellipse at 68% 45%,rgba(166,114,50,.18),transparent 60%)}
+.hero-rule{position:absolute;top:36px;bottom:38px;right:max(44px,calc((100vw - 1300px)/2));width:1px;background:linear-gradient(transparent,rgba(211,166,95,.3),transparent);z-index:2}
+.hero-layout{position:relative;min-height:675px;display:flex;align-items:center;gap:0;z-index:2}
+.hero-copy{z-index:4;position:relative;width:57%;padding:98px 18px 95px 0}
+.hero .eyebrow{font-family:Arial,Vazirmatn,sans-serif;font-size:12px;letter-spacing:3px;color:#e1bc7e;display:inline-flex;align-items:center;gap:10px}
+.hero h1{font-size:clamp(54px,5.6vw,92px);font-weight:900;line-height:1.45;margin:25px 0 20px;letter-spacing:-3px;text-shadow:0 8px 30px #0009}
+.hero h1 em{background:linear-gradient(95deg,#f7deab,#d5a259 55%,#f8e3b7);background-clip:text;color:transparent}
+.hero-copy>p{font-size:16px;line-height:2.45;max-width:550px;color:#e2d8c8;text-shadow:0 2px 12px #000}
+.hero-actions{margin-top:42px;gap:15px}
+.btn{min-height:57px;border-radius:2px;padding:16px 33px;font-size:13px;gap:32px}
+.btn-gold{background:linear-gradient(115deg,#f5ddaa 0%,#d8a75b 58%,#edcc91 100%);box-shadow:0 6px 26px rgba(194,137,58,.16)}
+.btn-gold:hover{box-shadow:0 9px 35px rgba(194,137,58,.28)}
+.btn-outline{border:1px solid rgba(232,205,161,.58);background:rgba(8,8,8,.38);color:#fff2da}
+.btn-outline:hover{background:rgba(217,164,82,.12)}
+.launch{font-size:12px;color:#d9cbb8;margin-top:38px}
+.hero-visual{position:absolute;z-index:-1;left:0;right:30%;top:0;bottom:0;width:auto;height:auto;margin:0;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:contrast(1.1) saturate(.92)}
+.hero-photo-shade{position:absolute;z-index:1;inset:0;background:linear-gradient(270deg,#090a0a 0%,rgba(9,10,10,.87) 12%,rgba(9,10,10,.35) 48%,rgba(9,10,10,.09) 77%),linear-gradient(0deg,#090a0a 0%,transparent 23%,transparent 75%,rgba(9,10,10,.26));pointer-events:none}
+.hero-visual:before,.hero-visual .visual-line{display:none}
+.image-caption{z-index:2;left:42px;right:auto;bottom:65px;display:flex;flex-direction:column;gap:7px;color:#f2ddbc;font-size:10px;letter-spacing:3px}
+.hero-bottom{position:relative;z-index:3;width:min(1300px,calc(100% - 88px));margin-top:-5px;padding:19px 0 27px;border-top:1px solid rgba(206,160,88,.3)}
+.hero-bottom>div{font-size:12px;letter-spacing:.1px;color:#e1d4bf;border-left-color:#59452c}
+.mini-icon{color:#e0ae67}
+.section{padding-block:120px}
+.section-head{margin-bottom:52px}
+.section-head .eyebrow,.philosophy .eyebrow{letter-spacing:1px;color:#d6a663}
+.section-head h2,.philosophy h2{font-size:clamp(38px,4vw,55px);font-weight:900;line-height:1.5}
+.section-head p{font-size:15px}
+.products{background:linear-gradient(180deg,#111210,#10100f);border-top:1px solid #30291f}
+.product-grid{gap:28px}
+.product-card{height:480px;border:1px solid #473724;border-radius:2px;box-shadow:0 18px 45px #0004}
+.product-card img{filter:saturate(.9) contrast(1.08)}
+.product-card:after{background:linear-gradient(270deg,rgba(4,5,5,.96),rgba(5,5,5,.5) 48%,transparent 100%)}
+.product-overlay{right:43px;max-width:65%}
+.product-overlay h3{font-size:43px;margin:18px 0 8px}
+.product-overlay p{font-size:14px;color:#eee4d5}
+.product-kicker{font-size:11px;letter-spacing:3px}
+.soon{font-size:13px;padding:15px 0;margin-top:20px}
+.philosophy{background:radial-gradient(ellipse at 15% 40%,#282016,#0a0b0b 60%)}
+.philosophy-layout{gap:100px}
+.philosophy h2{font-size:clamp(36px,4vw,54px)}
+.philosophy-layout>div>p{font-size:15px;line-height:2.5;max-width:580px}
+.pillars{background:linear-gradient(130deg,#191a18,#111210);border-color:#4c3a27;border-radius:2px;padding:14px 32px;box-shadow:0 22px 80px #0004}
+.pillar{padding:30px 0;border-bottom-color:#3c3327}
+.pillar-icon{border-color:#927145;border-radius:2px;width:58px;height:58px}
+.pillar h3{font-size:19px}
+.pillar p{font-size:13px}
+.journey{background:#131411;border-color:#3c3123}
+.steps{gap:24px}
+.step{padding:24px 16px 10px;border-top:1px solid #b68a50}
+.step-number{font-size:40px}
+.step h3{font-size:20px}
+.step p{font-size:13px;line-height:2.2}
+.branch-section{background:radial-gradient(ellipse at 74% 50%,#211a12,#0d0e0d 64%);border-color:#443322}
+.branch-grid{grid-template-columns:1.05fr .95fr;gap:28px}
+.branch-card,.branch-visual{border:1px solid #6a4e2b;border-radius:2px;background:#141514}
+.branch-card{padding:43px}
+.branch-icon{border-radius:2px}
+.branch-item h3{font-size:19px}
+.branch-item address{font-size:16px}
+.branch-phones a{font-size:19px}
+.branch-visual{min-height:395px;background:radial-gradient(circle at center,#76542c40,transparent 61%),repeating-linear-gradient(40deg,transparent 0 58px,#d6ae7017 59px,transparent 60px),#111312}
+.contact{padding:140px 0;background:radial-gradient(ellipse at 50% 105%,#78552b45,transparent 65%),#090a0a;border-top:1px solid #423020}
+.contact h2{font-size:clamp(48px,5vw,73px)}
+.contact p{font-size:15px;line-height:2.1}
+.domain{border-radius:0;font-size:17px}
+.footer{border-top:1px solid #503c26}
+@media(max-width:1000px){
+.shell{width:min(100% - 50px,1300px)}
+.hero-visual{right:22%}
+.hero-copy{width:65%}
+.hero h1{font-size:clamp(51px,6vw,73px)}
+.hero-photo-shade{background:linear-gradient(270deg,#090a0a,rgba(9,10,10,.65) 40%,rgba(9,10,10,.14)),linear-gradient(0deg,#090a0a,transparent 25%)}
+.links{gap:18px}
+.product-card{height:400px}
+.philosophy-layout{gap:42px}
+.branch-card{padding:28px}
+}
+@media(max-width:700px){
+.shell,.hero-bottom{width:calc(100% - 36px)}
+.header{height:70px}
+.brand-icon{width:44px;height:44px}
+.brand-text b{font-size:22px}
+.brand-text small{font-size:8px}
+.nav-cta{padding:9px 12px}
+.links{top:70px;background:#11110f}
+.hero{min-height:0}
+.hero-rule{display:none}
+.hero-layout{min-height:750px;display:flex;align-items:flex-start;flex-direction:column}
+.hero-copy{width:100%;padding:85px 6px 50px;text-align:center}
+.hero h1{font-size:clamp(42px,10vw,63px);line-height:1.55;letter-spacing:-1.8px;margin:20px 0}
+.hero-copy>p{font-size:14px;line-height:2.3;margin-inline:auto;max-width:480px}
+.hero .eyebrow{font-size:10px;letter-spacing:2px;justify-content:center}
+.hero-actions{justify-content:center;gap:10px;margin-top:27px}
+.hero-actions .btn{min-height:52px;gap:12px;padding:13px 18px}
+.launch{justify-content:center;margin-top:25px}
+.hero-visual{position:absolute;inset:0;z-index:-1;width:100%;height:100%;border:0;margin:0}
+.hero-visual img{object-position:50% 100%}
+.hero-photo-shade{background:linear-gradient(180deg,#090a0a 0%,rgba(9,10,10,.83) 19%,rgba(9,10,10,.5) 50%,rgba(9,10,10,.18) 72%,#090a0a 100%)}
+.image-caption{bottom:55px;left:25px}
+.hero-bottom{border-top-color:#554027;padding:14px 0 25px}
+.hero-bottom>div{font-size:12px;padding:11px 0}
+.section{padding-block:85px}
+.section-head h2,.philosophy h2{font-size:34px}
+.product-grid{gap:19px}
+.product-card{height:365px}
+.product-overlay{right:24px;max-width:75%}
+.product-overlay h3{font-size:36px}
+.philosophy-layout{gap:35px}
+.pillars{padding:8px 23px}
+.steps{gap:18px}
+.step{padding:18px 4px}
+.step h3{font-size:16px}
+.branch-grid{grid-template-columns:1fr;gap:20px}
+.branch-card{padding:26px}
+.branch-visual{min-height:280px}
+.contact{padding:100px 0}
+.contact h2{font-size:44px}
+.footer-main{gap:17px}
+}
+@media(max-width:390px){
+.hero-layout{min-height:700px}
+.hero-copy{padding-top:70px}
+.hero h1{font-size:40px}
+.hero-actions .btn{font-size:11px;padding:12px}
+.product-card{height:335px}
+}
