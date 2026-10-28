@@ -37,4 +37,6 @@ Open http://localhost:8080.
 - آدرس: شهرقدس، خیابان شهید سلیمانی، چهارراه طالقانی، پاساژ رزگلد
 - تلفن: ۰۹۱۲۴۴۷۵۳۱۰ / ۰۹۱۹۳۶۹۹۵۹۲
 - موقعیت در نشان: https://neshan.org/maps/places/0443068cf4ef48f489b83c52f0473526#c35.718-51.113-17z-0p
-- مختصات: 35.71796340555912, 51.111848177689666
+
+## Redesign review
+See [DESIGN_AUDIT.md](DESIGN_AUDIT.md) and [DESIGN_REVIEW.md](DESIGN_REVIEW.md). Screenshots are in `review/`. No installation or build step is required.
