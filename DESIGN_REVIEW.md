@@ -1,21 +1,30 @@
-# Design review — 28 October 2026
+# BASHEMSH — black & gold cinematic direction
 
-## Changes
-- Rebuilt semantic RTL structure around the requested launch H1 and a single hero action.
-- Replaced layered overrides with one responsive stylesheet. Charcoal, ivory and champagne typography, open photographic layouts and an ivory editorial section establish hierarchy without ornamental cards.
-- Removed roadmap, repeated launch section, gradients, decorative icons and mobile menu dependency. Three navigation links remain visible at small widths and work without JavaScript.
-- Retained exact address, both phone numbers and their international `tel:` destinations, and the exact Neshan URL/icon. No visible coordinates or sales controls.
-- Preserved CNAME, robots, sitemap, HTTPS canonical and custom-domain configuration. No dependencies or build tooling added.
+## Art direction
+The full-bleed campaign replaces the framed image/text split. Large, unmarked metal forms, directional gold light, black stone and near-black negative space make physical material the focal point. Champagne display type sits in the dark field. One underlined hero action stays discreet. Mobile uses its own image source, crop, scale, fade and lower-field placement; tablet positions the metal below the text. No section numbering, English campaign captions, light portfolio panels or repeated launch sections remain.
 
-## Assets
-`assets/editorial.webp`, `assets/gold-study.webp`, and `assets/silver-study.webp` are local optimized derivatives of an image created with the built-in image generation tool. Collection images are editorial detail crops. Visible captions identify them as concepts, not inventory. Previous marked assets are unused and retained for history. Google Fonts remains an external dependency with Tahoma/sans-serif fallback; font failure does not block content.
+Estedad was selected after rendering it against Vazirmatn at equal weight and size in `review/type-comparison.html`, at desktop and mobile widths. Its more compact, angular heavy forms gave the exact Persian headline and brand name stronger presence. Hero weight is 800; headings 700; body 400; wordmark 900. Persian letter spacing remains normal, line height leaves dots and ascenders clear, and headings consistently align to RTL start. Estedad is locally hosted and preloaded. Both comparison fonts are SIL OFL 1.1; original licenses accompany the files in `assets/fonts/`. Production loads only Estedad. Sources: [Estedad](https://github.com/aminabedi68/Estedad), [Vazirmatn](https://github.com/rastikerdar/vazirmatn).
 
-Generation prompt: “Use case: stylized-concept. Asset: luxury bullion coming-soon editorial website. Create a wide 3:2 still life of two completely blank unmarked metal ingots, one warm gold and one cool silver, on a matte charcoal architectural plinth, sculptural diagonal arrangement, dark studio background, soft large side light, restrained champagne highlights, sophisticated tactile material study. Entire ingots visible with breathing room. No logos, hallmarks, letters, numbers, weights, purity, text or engraving anywhere. This is an abstract conceptual render, not inventory or official product photography.”
+The identity combines the heavy Persian wordmark, a restrained Latin brand signature and a custom vector cast-ingot silhouette with side/base planes. The same symbol is used in header, about section, footer and favicon. It is a design proposal within this page, not a claim of registered trademark status.
 
-## Actual verification
-Local Python HTTP server and Codex in-app browser used. Requested viewport widths: 360, 390, 768, 1024, 1440, 1920px, each at 1000px height. Browser measurements found no horizontal overflow and no off-screen heading, navigation, figure or address bounds at any width. Images loaded successfully. Required H1, RTL hierarchy, anchor targets and absence of visible coordinates verified in rendered DOM. Navigation to contact exercised. Phone/Neshan hrefs inspected without placing calls. No console warnings or errors observed.
+Collections use large material details with gold/silver category titles on shaded lower areas. About and branch remain short and dark, with readable contact details rather than decorative metadata. The exact address, both telephone numbers and Neshan URL are retained. No visible coordinates, commercial inventory claims, certifications or investment promises were introduced.
 
-Viewport screenshots are saved as `review/{width}.jpg`; `review/contact-mobile.jpg` records the mobile branch section. Reviewed the mobile hero, collections and contact and desktop composition. The first hero crop clipped the ingots; changed it to the source 3:2 ratio. Full-page browser captures had stitching artifacts during resize, so final review artifacts use viewport captures after reload. No automated accessibility audit, physical-device testing, live telephone call or external navigation-provider availability test was performed. Keyboard-visible focus, skip link, semantic landmarks, descriptive image alternatives and reduced-motion CSS were inspected.
+## Visual review and corrections before commit
+Rendered in the Codex in-app browser through a local Python HTTP server at 390×844, 768×1024 and 1440×950; also checked 360px. Screenshots were inspected for type weight, alignment, dominant metal scale, contrast and composition—not just overflow.
 
-## Review boundary
-Feature branch only. No merge, production deployment, DNS or Cloudflare changes requested or performed.
+- Initial mobile cover crop cut the ingot silhouettes. Changed to a dedicated source with full silhouettes and a fade on the image itself.
+- Initial tablet cover image competed with the supporting copy. Lowered and scaled its placement to preserve a dark text field.
+- Initial geometric symbol appeared gemstone-like. Replaced the pointed base with a cast-ingot silhouette and simple depth planes.
+- Removed decorative numbers, tiny English microcopy and the extra header contact action. Body and supporting text are now 12–16px, with a limited Latin identity signature.
+
+Final hero screenshots: `review/prestige-390.jpg`, `review/prestige-768.jpg`, `review/prestige-1440.jpg`; additional small-screen capture at `review/prestige-360.jpg`. Collection and contact captures and font comparisons are also in `review/`. Earlier numbered screenshots were removed to avoid confusing the superseded direction with the current result.
+
+## Technical verification
+Browser measurements at 390, 768 and 1440px found no horizontal overflow; heading/navigation bounds remained on screen. All images and local Estedad loaded. Verified the exact H1, working internal anchor targets, correct phone and Neshan hrefs, exact rendered address and absence of coordinates in visible text. Navigated to collections/about/contact. No console warnings/errors on the healthy preview page. The preview server was restarted after a local connection failure; final captures use the restored server. Calls were not placed and Neshan service availability was not tested.
+
+Static HTML/CSS/vanilla JavaScript retained. No framework or build step added. CNAME, robots, sitemap and custom-domain/HTTPS settings preserved. Keyboard focus, skip link, landmarks, image alternatives and reduced-motion styles retained. No automated accessibility audit or physical-device testing is claimed. No merge, deploy, DNS or Cloudflare change performed.
+
+## Generated asset provenance
+Built-in image generation tool used for `assets/campaign.webp` and its optimized mobile derivative `assets/campaign-mobile.webp`. No product marks, weights or purity claims appear. Collection details retain the previous unmarked concept image; the visible concept/coming-soon note is preserved.
+
+Prompt: “Use case: stylized-concept. Asset: full-bleed cinematic luxury bullion campaign hero, landscape 16:9. Deep almost black studio scene with two monumental completely blank unmarked ingots, warm rich gold standing at an angle and a lower cool silver bar, entirely in the LEFT 50 percent of frame, resting on a dark polished stone plinth. Dramatic narrow directional light from upper left grazes the gold with luminous warm edges, silver cool reflections, realistic brushed metal microtexture, luxurious high contrast and rich tangible weight, subtle reflection. RIGHT 50 percent is near-black clean negative space for Persian headline added in HTML, no objects there. Lower right dark. Sophisticated high-end watch campaign lighting, no busy rocks, no glitter. No text, engraving, logos, stamps, purity, weights or numbers. Clearly an artistic material concept, not official products or inventory.”

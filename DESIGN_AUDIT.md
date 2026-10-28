@@ -8,3 +8,6 @@
 
 ## Technical inspection
 Semantic RTL markup, canonical/OG metadata, local WebP assets and a skip link exist. All images are 1200×800 (53–108 KB). Google Fonts is remote; no local font fallback asset exists. Navigation closes after selection but does not reset its accessible label or support Escape. Existing CSS hides horizontal overflow, masking potential defects. No build pipeline is required. CNAME is `bashemsh.ir`; robots and sitemap use HTTPS. The redesign preserves deployment configuration and business contact destinations.
+
+## Art-direction correction
+The first PR iteration improved structure but retained a portfolio-like split hero, light editorial panel, weak display weight and numbered labels. The corrected black-and-gold campaign removes these treatments, uses rendered Estedad/Vazirmatn comparisons, integrates directional metal imagery into the hero, and establishes a consistent ingot-inspired identity. Current verification and screenshots are in DESIGN_REVIEW.md.

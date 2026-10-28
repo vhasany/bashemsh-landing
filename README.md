@@ -30,7 +30,7 @@ Open http://localhost:8080.
 - No commerce flow, contact form, backend or analytics yet.
 - Text avoids claims of currently operating sales, permissions or warranties.
 - Hero/product imagery is an original concept preview and **must not be interpreted as verified real product photos or guaranteed specifications**. Replace with actual product photography before live sales.
-- Google Fonts is an external dependency; for full self-hosting, host appropriately licensed font files separately.
+- Estedad is self-hosted under SIL OFL 1.1; its license is included in `assets/fonts/`. Vazirmatn is included only for the review comparison page.
 
 
 ## شعبه مرکزی
